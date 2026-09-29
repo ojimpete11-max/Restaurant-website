@@ -83,6 +83,10 @@ section h2 {
 }
 
 #menu div {
+    display: inline-block;
+    width: 20%;
+    vertical align: top;
+    
     background: white;
     padding: 25px;
     margin: 15px;
@@ -93,6 +97,22 @@ section h2 {
 #menu h3 {
     margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+
+    #menu > div {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 
 /* Footer */
 footer {
