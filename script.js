@@ -1,4 +1,3 @@
-// Order Now button
 const orderButtons = document.querySelectorAll(".order-btn");
 
 orderButtons.forEach(button => {
