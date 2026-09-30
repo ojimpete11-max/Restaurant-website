@@ -1,6 +1,8 @@
 // Order Now button
-const orderButton = document.querySelector(".order-btn");
+const orderButtons = document.querySelectorAll(".order-btn");
 
-orderButton.addEventListener("click", function () {
-    alert("Thanks for your order! Our menu will open shortly.");
+orderButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        alert("Your order button works!");
+    });
 });
