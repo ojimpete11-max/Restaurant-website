@@ -10,13 +10,9 @@ orderButtons.forEach(button => {
 
         const quantity = prompt(`How many ${name} would you like?`);
         if (!quantity) return;
-
-        alert(
-            `Order received!\n\n` +
-            `Name: ${customerName}\n` +
-            `Item: ${name}\n` +
-            `Price: ₦${price}\n` +
-            `Quantity: ${quantity}`
-        );
+    alert(
+        `Thanks, ${customerName}! You ordered ${quantity} x ${name} for ${price} each.`
+    );
+    }
     });
 });
