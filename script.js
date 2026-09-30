@@ -2,7 +2,10 @@
 const orderButtons = document.querySelectorAll(".order-btn");
 
 orderButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        const foodName = button.parentElement.querySelector("h3").textContent;
-        alert(`You ordered ${foodName} - ₦${foodPrice}`);
+    button.addEventListener("click", function () {
+        const itemName = this.dataset.name;
+        const itemPrice = this.dataset.price;
+
+        alert(`You ordered ${itemName} for ₦${itemPrice}`);
+    });
 });
